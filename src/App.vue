@@ -1,15 +1,14 @@
 <template>
-  <h1>Hi 厄加特</h1>
-  <Aliyu/>
+  <h2>导航栏
+    <router-link to="/">aliyu</router-link>
+    <router-link to="/aliyu">aliyu2</router-link>
+  </h2>
+  <router-view></router-view>
 </template>
 
 <script>
-import Aliyu from './components/Aliyu.vue'
 
 export default {
-  name: 'App',
-  components: {
-    Aliyu
-  }
+  name: 'App'
 }
 </script>
