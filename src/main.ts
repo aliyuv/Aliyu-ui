@@ -2,19 +2,19 @@ import {createApp} from "vue";
 import App from "./App.vue";
 import "./index.css";
 import {createWebHashHistory, createRouter} from "vue-router";
-import Aliyu from "./components/Aliyu.vue";
-import Aliyu2 from "./components/Aliyu2.vue";
+import Home from "./views/Home.vue";
+import Doc from "./views/Doc.vue";
 
 const history = createWebHashHistory();
 const router = createRouter({
     history: history, routes: [
         {
             path: "/",
-            component: Aliyu
+            component: Home
         },
         {
             path: "/aliyu",
-            component: Aliyu2
+            component: Doc
         }
     ]
 });
