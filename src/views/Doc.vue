@@ -43,34 +43,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-aside {
-  background: white;
-  width: 150px;
-  padding: 16px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 70px;
-  height: 100%;
-
-  > h2 {
-    margin-bottom: 4px;
-  }
-
-  > ol {
-    > li {
-      padding: 4px 0;
-    }
-  }
-
-  @media (max-width: 500px) {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 70px;
-  }
-}
-
 .layout {
   display: flex;
   flex-direction: column;
@@ -100,8 +72,33 @@ aside {
   > main {
     flex-grow: 1;
     padding: 16px;
-    background: lightgreen;
+    background: white;
   }
+}
+
+aside {
+  background: lightblue;
+  width: 150px;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 70px;
+  height: 100%;
+
+  > h2 {
+    margin-bottom: 4px;
+  }
+
+  > ol {
+    > li {
+      padding: 4px 0;
+    }
+  }
+}
+
+main {
+  overflow: auto;
 }
 </style>
 
