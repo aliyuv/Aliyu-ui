@@ -1,13 +1,21 @@
 <template>
-  <button>
+  <button :size="size" v-bind="rest">
     <slot/>
   </button>
 </template>
 
-<script>
+<script lang="ts">
 export default {
-  name: "Button"
-}
+  name: "Button",
+  props: {},
+  inheritAttrs: false,
+  setup(props,context) {
+    const {...rest} = context.attrs;
+    return {
+      rest
+    }
+  }
+};
 </script>
 
 <style scoped>
