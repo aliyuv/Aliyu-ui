@@ -44,7 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 aside {
-  background: lightblue;
+  background: white;
   width: 150px;
   padding: 16px;
   position: fixed;
