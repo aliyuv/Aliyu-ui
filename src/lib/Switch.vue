@@ -29,7 +29,7 @@ $h2: $h - 4px;
   width: $h * 2;
   border: none;
   background: #bfbfbf;
-  border-radius: $h / 2;
+  border-radius: $h/2;
   position: relative;
 
   > span {
@@ -43,12 +43,12 @@ $h2: $h - 4px;
     transition: all 250ms;
   }
 
-  &.checked {
+  &.gulu-checked {
     background: #1890ff;
-  }
 
-  &.gulu-checked:hover > span {
-    left: calc(100% - #{$h2} - 2px);
+    > span {
+      left: calc(100% - #{$h2} - 2px);
+    }
   }
 
   &:focus {
@@ -61,7 +61,7 @@ $h2: $h - 4px;
     }
   }
 
-  &.gu-checked:active {
+  &.gulu-checked:active {
     > span {
       width: $h2 + 4px;
       margin-left: -4px;
