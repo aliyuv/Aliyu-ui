@@ -44,7 +44,8 @@ export default {
         },
         cancel() {
           console.log("cancel");
-        }
+        },
+        closeClickOverlay: true
       });
     };
     return {x, toggle, f1, f2, showDialog};
