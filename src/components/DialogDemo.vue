@@ -1,16 +1,19 @@
 <template>
   <div>Dialog 示例</div>
   <h1>示例1</h1>
-  <Button @click="toggle">toggle</Button>
-  <Dialog v-model:visible="x" :close-click-overlay="false" :ok="f1" :cancel="f2">
-    <template v-slot:title>
-      <strong>加错的标题</strong>
-    </template>
-    <template v-slot:content>
-      <strong>hi</strong>
-      <div>hi2</div>
-    </template>
-  </Dialog>
+  <div style="position: relative; z-index: 1">
+    <Button @click="toggle">toggle</Button>
+    <Dialog v-model:visible="x" :close-click-overlay="false" :ok="f1" :cancel="f2">
+      <template v-slot:title>
+        <strong>加错的标题</strong>
+      </template>
+      <template v-slot:content>
+        <strong>hi</strong>
+        <div>hi2</div>
+      </template>
+    </Dialog>
+  </div>
+  <div style="position: relative; z-index: 1; width: 300px; height: 300px; background: red;"></div>
 </template>
 
 <script lang="ts">
