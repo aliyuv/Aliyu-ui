@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
 $color: #007974;
 .topnav {
-  color: $color ;
+  color: $color;
   display: flex;
   padding: 16px;
   position: fixed;
@@ -42,7 +42,8 @@ $color: #007974;
   > .logo {
     max-width: 6em;
     margin-right: auto;
-    >svg{
+
+    > svg {
       width: 32px;
       height: 32px;
     }
