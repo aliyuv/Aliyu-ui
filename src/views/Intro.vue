@@ -1,5 +1,6 @@
 <template>
-  <article class="markdown-body" v-html="md"></article>
+  <article class="markdown-body" v-html="md">
+  </article>
 </template>
 
 <script>
