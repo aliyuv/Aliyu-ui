@@ -2,7 +2,7 @@
 支持 disabled
 </demo>
 <template>
-  <Switch v-model:value="bool" disabled />
+<Switch v-model:value="bool" disabled />
 </template>
 
 <script lang="ts">
