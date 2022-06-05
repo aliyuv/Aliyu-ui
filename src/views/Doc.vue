@@ -86,6 +86,7 @@ $aside-index: 10;
 
   > aside {
     flex-shrink: 0;
+    z-index: 1;
   }
 
   > main {
