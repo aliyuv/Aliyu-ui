@@ -14,7 +14,7 @@
     "node-sass": "npm:sass@1.26.11"
   },
   "dependencies": {
-    "esbuild-darwin-arm64": "^0.14.42",
+    "esbuild": "^0.14.42",
     "github-markdown-css": "4.0.0",
     "marked": "1.1.1",
     "prismjs": "1.21.0",
