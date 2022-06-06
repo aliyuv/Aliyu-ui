@@ -52,7 +52,7 @@ export default {
   setup() {
     const menuVisible = inject<Ref<boolean>>("menuVisible"); // get
     return {
-      menuVisible
+      menuVisible: menuVisible
     };
   },
 };
